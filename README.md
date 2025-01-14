@@ -10,9 +10,7 @@ There are two possible ways to install and use this template.
 
 ### Create an new folder and template
 
-In this scenario, an analyst is starting a fresh new quarto doc in a new folder. A folder will be created, with a bloilerplate `.qmd` template and the Citistat branding. The `.qmd` template is then editted with original content.
-
-The following line will create a new folder containing a boilerplate `.qmd` template with Citistat branding:
+In this scenario, an analyst is starting a fresh new quarto doc in a new folder. The following line will create a new folder containing a boilerplate `.qmd` template with Citistat branding:
 
 ```bash
 quarto use template city-of-baltimore/citistatQuartoTemplate
