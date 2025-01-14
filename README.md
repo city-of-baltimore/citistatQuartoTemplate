@@ -13,5 +13,5 @@ quarto add city-of-baltimore/citistatQuartoTemplate
 Alternatively, you can install and use a template document directly using the following command:
 
 ```bash
-quarto use city-of-baltimore/citistatQuartoTemplate
+quarto use template city-of-baltimore/citistatQuartoTemplate
 ```
