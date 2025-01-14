@@ -6,15 +6,19 @@ contributes:
   formats:
     html:
       #mainfont: Pangolin
-      title-block-banner: true
+      title-block-banner: "#CCCCCC"
       # filters:
       #     - annotate.lua
       theme: [cosmo]#, citistat.scss]
+      embed-resources: true
+      smooth-scroll: true
       css: theme.css
       self-contained: true
       toc: true
       toc-expand: 2
       toc-location: left
+      sidebar: 
+        logo: images/opi_logo.png
       execute:
         echo: false
         warning: false
