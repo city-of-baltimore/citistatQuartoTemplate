@@ -6,8 +6,7 @@ contributes:
   formats:
     html:
       #mainfont: Pangolin
-      # title-block-banner: true
-      # title-block-banner-color: green
+      title-block-banner: true
       # filters:
       #     - annotate.lua
       theme: [cosmo]#, citistat.scss]
