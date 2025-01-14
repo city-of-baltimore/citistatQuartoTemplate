@@ -1,0 +1,22 @@
+title: citistat 
+author: Mr trashwheel
+version: 0.0.1
+quarto-required: ">=1.2"
+contributes:
+  formats:
+    html:
+      #mainfont: Pangolin
+      # title-block-banner: true
+      # title-block-banner-color: green
+      # filters:
+      #     - annotate.lua
+      theme: [cosmo]#, citistat.scss]
+      css: theme.css
+      self-contained: true
+      toc: true
+      toc-expand: 2
+      toc-location: left
+      execute:
+        echo: false
+        warning: false
+        messages: false

@@ -1,14 +1,10 @@
 ---
-title: "Quarto Sketchy Theme"
-subtitle: "for html documents"
-author: "David Schoch"
-date: today
-institute: "GESIS - Leibniz Institute for the Social Sciences"
-format: sketchy-html
-execute:
-  echo: false
-  warning: false
-  messages: false
+title: "CleanStat"
+subtitle: "January 20, 2025 Meeting"
+author: "Mr Trashwheel"
+date: last-modified
+format: citistat-html
+
 ---
 
 
@@ -25,6 +21,27 @@ library(gt)
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+### next level header
+
+here's text for another thing
+
+### next level header part two
+
+
+::: {.callout-tip}
+## Since the last meeting
+
+##### Actions:
+* Received data for owner-occupied properties removed from tax sale '21-'24 (BCIT)
+* Check in on opportunities with Pedro Aponte (DOF)
+* Parallel conversations on unpaid water bills (OPI+DPW)
+* Explored extracting data of returned mail (OPI + MPO + DPW)
+
+:::
+
+
+here's text for another thing more more more
 
 ## Running Code
 
@@ -52,15 +69,16 @@ Tables below
 
 sp500 |>
   head(10) |> 
-  dplyr::select(-adj_close) |>
+  select(1:4) |> 
   gt() |>
-  tab_header(
-    title = "S&P 500",
-    subtitle = glue::glue("something something")
-  ) |>
-  fmt_currency() |>
-  fmt_date(columns = date, date_style = "wd_m_day_year") |>
-  fmt_number(columns = volume, suffixing = TRUE)
+    tab_header(
+      title = md(paste0("**Property type listed in tax sale**"))) |> 
+    cols_align(
+      align = "left",
+      columns = everything()
+    ) |> 
+    opt_align_table_header(align = "left") |> 
+  tab_options(column_labels.background.color = r4OPI::opiColors()[1])
 
 ```
 
