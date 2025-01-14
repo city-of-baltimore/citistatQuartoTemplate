@@ -8,6 +8,17 @@ format: sketchy-html
 toc: true
 ---
 
+
+```{r}
+
+library(tidyverse)
+library(leaflet)
+library(gt)
+
+
+```
+
+
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
@@ -30,10 +41,30 @@ You can also [strike through]{.strike}, [cross-off]{.cross}, [highlight]{.highli
 box for arbitrary content
 :::
 
-Tables also work
+Tables below
 
-| Default | Left | Right | Center |
-|---------|:-----|------:|:------:|
-| 12      | 12   |    12 |   12   |
-| 123     | 123  |   123 |  123   |
-| 1       | 1    |     1 |   1    |
+#### tables!!
+
+```{r}
+
+sp500 |>
+  head(50) |> 
+  dplyr::select(-adj_close) |>
+  gt() |>
+  tab_header(
+    title = "S&P 500",
+    subtitle = glue::glue("something something")
+  ) |>
+  fmt_currency() |>
+  fmt_date(columns = date, date_style = "wd_m_day_year") |>
+  fmt_number(columns = volume, suffixing = TRUE)
+
+```
+
+
+#### map
+
+```{r}
+leaflet() %>% 
+  addTiles() 
+```

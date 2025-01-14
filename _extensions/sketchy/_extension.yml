@@ -1,5 +1,5 @@
-title: Sketchy HTML documents 
-author: David Schoch
+title: Citistat 
+author: Mr trashwhell
 version: 1.1.0
 quarto-required: ">=1.2"
 contributes:
@@ -10,5 +10,7 @@ contributes:
           - annotate.lua
       theme: [default, sketchy.scss]
       css: theme.css
-      footer: |
-              <a href="https://mr.schochastics.net">theme by schochastics</a> 
+  execute:
+    echo: false
+    warning: false
+    messages: false
