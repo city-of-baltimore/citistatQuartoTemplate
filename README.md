@@ -13,6 +13,8 @@ There are two possible ways to install and use this template.
 In this scenario, an analyst is starting a fresh new quarto doc in a new folder. The following line will create a new folder containing a boilerplate `.qmd` template with Citistat branding:
 
 ```bash
+### done in the "terminal" of Rstudio, not the "console"
+
 quarto use template city-of-baltimore/citistatQuartoTemplate
 ```
 
@@ -26,6 +28,8 @@ In this scenario, an analyst already has a folder with a quarto file and maybe s
 The template style can be installed into an existing folder using the following command:
 
 ```bash
+### done in the "terminal" of Rstudio, not the "console"
+
 quarto add city-of-baltimore/citistatQuartoTemplate
 ```
 
