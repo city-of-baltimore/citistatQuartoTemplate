@@ -1,5 +1,5 @@
 title: Citistat 
-author: Mr trashwhell
+author: Mr trashwheel
 version: 1.1.0
 quarto-required: ">=1.2"
 contributes:
@@ -10,7 +10,7 @@ contributes:
           - annotate.lua
       theme: [default, sketchy.scss]
       css: theme.css
-  execute:
-    echo: false
-    warning: false
-    messages: false
+      self-contained: true
+      toc: true
+      toc-expand: 2
+      toc-location: left
