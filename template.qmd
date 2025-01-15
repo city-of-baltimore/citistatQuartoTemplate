@@ -1,9 +1,14 @@
 ---
 title: "CleanStat"
-subtitle: "January 20, 2025 Meeting"
-author: "capt Trashwheel"
+subtitle: "January 14, 2025 Meeting"
+author: "Mr Trashwheel"
 date: last-modified
 format: citistat-html
+keywords: ["CleanTech", "Environment", "Meeting"]
+execute:
+  echo: false  # Hide code by default
+  warning: false  # Hide warnings
+  error: false  # Hide errors
 
 ---
 
@@ -18,21 +23,14 @@ library(gt)
 ```
 
 
-## Quarto
+## Summary
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-### next level header
-
-here's text for another thing
-
-### next level header part two
-
+The meeting involved DOT, 311 and ECC. The main theme was coming up with a way to make this work better. Using reviews from <https://quarto.org>, we made decent progress in ensuring the speed was more decent.
 
 ::: {.callout-tip}
-## Since the last meeting
+## Discussion topics
 
-##### Actions:
+###### Key Points:
 * Received data for owner-occupied properties removed from tax sale '21-'24 (BCIT)
 * Check in on opportunities with Pedro Aponte (DOF)
 * Parallel conversations on unpaid water bills (OPI+DPW)
@@ -40,10 +38,33 @@ here's text for another thing
 
 :::
 
+::: {.callout-note}
+## Accomplishments
 
-here's text for another thing more more more
+###### Wins:
+* Received data for owner-occupied properties removed from tax sale '21-'24 (BCIT)
+* Check in on opportunities with Pedro Aponte (DOF)
+* Parallel conversations on unpaid water bills (OPI+DPW)
+* Explored extracting data of returned mail (OPI + MPO + DPW)
 
-## Running Code
+:::
+
+## Discussion
+
+### DOT's Response from Last Deliverables
+
+In reviewing the latest deliverables, the Department of Transportation (DOT) has provided their insights on the initial set of documents. Much like the title block of a Quarto document, which serves as the foundational starting point of any report, the DOT’s response marks the beginning of an ongoing dialogue. Their feedback, much like the title banner, is bold and direct, setting the tone for the content that follows.
+
+Within the structure of these documents, the quarto-title-block holds the essential elements — akin to the key elements of DOT’s response: the title (or purpose) of the deliverables, the main objectives, and the authors responsible. Just as the quarto-title-banner visually highlights the document’s title and subtitle, DOT’s response emphasizes critical action items and recommendations, ensuring that the most important messages stand out clearly.
+
+### 311's Revision to Original Plan
+
+Moving forward, as we refine the deliverables, these foundational elements — both the title block and banner of Quarto and DOT’s feedback — will guide the way. Just as .quarto-title-banner styles the title with prominence, DOT's feedback serves as the driving force that will shape the revisions, ensuring each aspect of the project is highlighted and addressed.
+
+#### Detailed Revisions
+Through this iterative process, we’ll continue to enhance the deliverables, ensuring that the "title" of each response, like the clear and structured presentation of a Quarto document, is aligned with DOT’s expectations and requirements.
+
+## Data
 
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
@@ -63,7 +84,7 @@ box for arbitrary content
 
 Tables below
 
-#### tables!!
+### Tables
 
 ```{r}
 
@@ -83,9 +104,16 @@ sp500 |>
 ```
 
 
-#### map
+### Map
 
 ```{r}
 leaflet() %>% 
   addTiles() 
 ```
+
+<footer>
+  <div style="font-family: 'Arial', sans-serif; font-size: 14px; padding: 20px; background-color: white; color: white; text-align: center; margin: 10px 40px;">
+    <p>&copy; 2025 Your Organization. All Rights Reserved.</p>
+    <p>Made with <span style="color: #e74c3c;">❤️</span> by Your Team</p>
+  </div>
+</footer>
