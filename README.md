@@ -8,13 +8,15 @@ There are two possible ways to install and use this template.
 
 ### Create an new folder and template
 
-In this scenario, an analyst is starting a fresh new quarto doc in a new folder. The following line will create a new folder containing a boilerplate `.qmd` template with Citistat branding:
+In this scenario, an analyst is starting a fresh new quarto doc in a new or existing folder. The following line will create a boilerplate `.qmd` template with Citistat branding in a new or existing folder:
 
 ``` bash
 ### do this in the "terminal" of Rstudio, not the "console"
 
 quarto use template city-of-baltimore/citistatQuartoTemplate
 ```
+
+After the line is entered, there will be a few questions about permissions and whether a new folder should be created. Be aware that the boilerplate `.qmd` template file that gets created will take the name of its folder. That means it will overwrite an existing `.qmd` file if it has the same name.
 
 ### Install template into existing folder/document
 
@@ -38,4 +40,4 @@ Then the line `format: citistat-html` needs to be added into the yaml at the top
 ### Quarto basics
 
 -   [Installing and starting](https://quarto.org/docs/get-started/hello/rstudio.html)
--   [Common commands](https://quarto.org/docs/visual-editor/options.html)
+-   [Common Quarto commands](https://quarto.org/docs/visual-editor/options.html)
