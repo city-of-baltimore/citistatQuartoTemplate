@@ -6,7 +6,7 @@ OPI is abandoning powerpoint decks for interactive quarto documents. This is the
 
 There are two possible ways to install and use this template.
 
-### Create an new folder and template
+### Create new folder and template
 
 In this scenario, an analyst is starting a fresh new quarto doc in a new or existing folder. The following line will create a boilerplate `.qmd` template with Citistat branding in a new or existing folder:
 

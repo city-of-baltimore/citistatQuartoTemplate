@@ -7,8 +7,8 @@ contributes:
     html:
       #mainfont: Pangolin
       title-block-banner: "#CCCCCC"
-      # filters:
-      #     - annotate.lua
+      filters:
+          - annotate.lua
       theme: [cosmo]#, citistat.scss]
       embed-resources: true
       smooth-scroll: true
