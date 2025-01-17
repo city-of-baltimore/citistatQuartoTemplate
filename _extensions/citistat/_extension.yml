@@ -17,8 +17,6 @@ contributes:
       toc: true
       toc-expand: 2
       toc-location: left
-      sidebar: 
-        logo: images/opi_logo.png
       execute:
         echo: false
         warning: false
