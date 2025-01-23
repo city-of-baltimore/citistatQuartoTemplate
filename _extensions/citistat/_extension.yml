@@ -6,7 +6,13 @@ contributes:
   formats:
     html:
       #mainfont: Pangolin
-      title-block-banner: "#CCCCCC"
+      title-block-banner: "#FCB826"
+      footer: |
+        <footer>
+          <div style="font: 'Arial', sans-serif; font-size: 16px; padding: 10px; background-color: white; color: white; text-align: center; margin: 20px 20px 3px 20px;">
+            ®2025. Internal Use Only.
+            Made with ❤️ by OPI
+        </footer>
       filters:
           - annotate.lua
       theme: [cosmo]#, citistat.scss]
