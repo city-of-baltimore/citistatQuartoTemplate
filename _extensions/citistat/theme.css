@@ -1,5 +1,8 @@
 /* css styles */
 
+
+
+@media all and (min-width:409px) {
 .quarto-title-block .quarto-title-banner {
   background-image: url(images/opi_logo.png);
   background-size: 200px;
@@ -8,3 +11,5 @@
   padding-left: 50px;
   background-origin: content-box;
 }
+}
+

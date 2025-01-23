@@ -4,11 +4,7 @@ subtitle: "January 14, 2025 Meeting"
 author: "Mr Trashwheel"
 date: last-modified
 format: citistat-html
-keywords: ["CleanTech", "Environment", "Meeting"]
-execute:
-  echo: false  # Hide code by default
-  warning: false  # Hide warnings
-  error: false  # Hide errors
+keywords: ["Illegal Dumping", "Street Sweepers", "Tree Pruning"]
 
 ---
 
@@ -23,9 +19,11 @@ library(gt)
 ```
 
 
-## Summary
+## Objectives
 
 The meeting involved DOT, 311 and ECC. The main theme was coming up with a way to make this work better. Using reviews from <https://quarto.org>, we made decent progress in ensuring the speed was more decent.
+
+
 
 ::: {.callout-tip}
 ## Discussion topics
@@ -49,6 +47,106 @@ The meeting involved DOT, 311 and ECC. The main theme was coming up with a way t
 
 :::
 
+## Title of Point 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+You can use text decorators in your text, including stock ones like **bold**, *italic*, `code`, ~~strike~~, sub~sub~, super^super^. There are more at [this link](https://quarto.org/docs/visual-editor/options.html), or you can display a url with link like <https://quarto.org>.
+
+We've also added custom decorators like [strike through]{.strike}, [cross-off]{.cross}, [highlight]{.highlight}, and [circle]{.circle} text. We can create and add more as needed. You can also add photos into the document as outlined [here](https://quarto.org/docs/authoring/figures.html).
+
+
+### This is the next level header
+
+You can use multiple `#` at the beginning of a line to define the header level, with one hashtag being H1. You can also add lists like this:
+
+* unordered list
+    + sub-item 1
+    + sub-item 2
+        - sub-sub-item 1
+        
+or you can do:
+
+- [ ] Task 1
+- [x] Task 2
+
+or an ordered list
+
+1. ordered list
+2. item 2
+    i.  sub item 1
+    ii. sub item 2
+3. number 3
+
+### a couple other formatting options
+
+You can call out text with blockquotes
+
+> blockquotes are fun
+
+
+
+You can also add html straight into the doc to have more options. `</br>` is being added below to create additional whitespace.
+
+</br></br></br>
+
+
+## Data and Coding Examples
+
+Python, R and SQL are just a few language that you can use inside codeblocks to create custom tables and figures. If you want to make things complicated, you can [switch back and forth between languages](https://www.r-bloggers.com/2023/01/combining-r-and-python-with-reticulate-and-quarto/) while sharing objects between them.
+
+
+
+Tables below
+
+### Tables
+
+The code below using a built-in dataset to create a table.
+
+```{r}
+
+sp500 |>
+  head(10) |> 
+  select(1:4) |> 
+  gt() |>
+    tab_header(
+      title = md(paste0("**Property type listed in tax sale**"))) |> 
+    cols_align(
+      align = "left",
+      columns = everything()
+    ) |> 
+    opt_align_table_header(align = "left") |> 
+  tab_options(column_labels.background.color = "#fdb924")
+
+```
+
+
+### Maps
+
+Interactive maps using leaflet are helpful for relaying spatial information.
+
+#### Blank, unlabeled, nuetral map
+```{r}
+leaflet() |> 
+      setView(lng = -76.61238, lat = 39.29064, zoom = 11) |> 
+      addProviderTiles(providers$CartoDB.PositronNoLabels)
+```
+
+
+
+#### Map with labels and other controls added
+
+```{r}
+leaflet() |> 
+  addTiles(options = providerTileOptions(minZoom = 10, maxZoom = 12)) |> 
+      setView(lng = -76.61238, lat = 39.29064, zoom = 11) |> 
+    setMaxBounds( lng1 = -76.9,
+                  lat1 = 39.1,
+                  lng2 = -76.3,
+                  lat2 = 39.45 )
+```
+
+
 ## Discussion
 
 ### DOT's Response from Last Deliverables
@@ -64,56 +162,7 @@ Moving forward, as we refine the deliverables, these foundational elements — b
 #### Detailed Revisions
 Through this iterative process, we’ll continue to enhance the deliverables, ensuring that the "title" of each response, like the clear and structured presentation of a Quarto document, is aligned with DOT’s expectations and requirements.
 
-## Data
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
-
-> blockquotes are fun
-
-You can also [strike through]{.strike}, [cross-off]{.cross}, [highlight]{.highlight}, and [circle]{.circle} text
-
-:::{.box}
-box for arbitrary content
-:::
-
-Tables below
-
-### Tables
-
-```{r}
-
-sp500 |>
-  head(10) |> 
-  select(1:4) |> 
-  gt() |>
-    tab_header(
-      title = md(paste0("**Property type listed in tax sale**"))) |> 
-    cols_align(
-      align = "left",
-      columns = everything()
-    ) |> 
-    opt_align_table_header(align = "left") |> 
-  tab_options(column_labels.background.color = r4OPI::opiColors()[1])
-
-```
 
 
-### Map
 
-```{r}
-leaflet() %>% 
-  addTiles() 
-```
 
-<footer>
-  <div style="font-family: 'Arial', sans-serif; font-size: 14px; padding: 20px; background-color: white; color: white; text-align: center; margin: 10px 40px;">
-    <p>&copy; 2025 Your Organization. All Rights Reserved.</p>
-    <p>Made with <span style="color: #e74c3c;">❤️</span> by Your Team</p>
-  </div>
-</footer>
