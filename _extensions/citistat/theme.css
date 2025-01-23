@@ -5,11 +5,97 @@
 @media all and (min-width:409px) {
 .quarto-title-block .quarto-title-banner {
   background-image: url(images/opi_logo.png);
+  background-color: #FCB826;
   background-size: 200px;
   background-position: left;
   background-repeat: no-repeat;
   padding-left: 50px;
   background-origin: content-box;
 }
+
+.quarto-title-banner h1, .quarto-title-banner .h1, .quarto-title-banner h2, .quarto-title-banner .h2 {
+  color: black;
 }
+
+/* Custom CSS to position links on the right side */
+#right-links {
+  position: fixed;
+  right: 10px;
+  top: 180px;
+  width: 160px;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional background for better visibility */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#right-links a {
+  display: block;
+  margin-bottom: 5px;
+  color: black; /* Link color */
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#right-links a:hover {
+  text-decoration: underline;
+}
+
+.previous-meetings-container {
+  font-size: 14px;
+  padding: 2px; /* Horizontal and vertical padding */
+  color: #FCB826; /* Link color */
+  background-color: white; /* Optional: Background color */
+}
+
+/* Change the color of the scrollbar in the TOC */
+.toc {
+  scrollbar-color: #FCB826 transparent; /* Set the scrollbar thumb to yellow and track to transparent */
+  scrollbar-width: thin;  /* Set the scrollbar width */
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.toc::-webkit-scrollbar {
+  width: 8px;  /* Adjust width of the scrollbar */
+}
+
+.toc::-webkit-scrollbar-thumb {
+  background-color: #FCB826;  /* Set the color of the thumb (scroll handle) */
+  border-radius: 10px;  /* Optional: makes the thumb rounded */
+}
+
+.toc::-webkit-scrollbar-track {
+  background-color: transparent;  /* Set the track color */
+}
+
+/* Change the link color in the TOC */
+.toc a {
+  color: #FCB826;  /* Gold color */
+}
+
+p, h5, h6, h1, li{
+  color: black;  /* Gold color */
+}
+
+h2{
+  color: #FCB826;
+  font-size: 20px;
+}
+
+h3{
+  color: #2761e3;
+  font-size: 18px;
+}
+  
+h4{
+  font-size: 18px;
+   color: black; 
+}
+
+strong{
+   color: #FCB826;  /* Gold color */
+}
+}
+
+
 
