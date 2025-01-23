@@ -19,6 +19,16 @@ library(plotly)
 
 ```
 
+<div id="right-links">
+<div class="previous-meetings-container">
+  <strong>Previous Meetings</strong>
+</div>
+  <a href="#section3">October 2024</a>
+  <a href="#section1">November 2024</a>
+  <a href="#section2">December 2024</a>
+</div>
+
+
 
 ## Objectives
 
@@ -184,6 +194,13 @@ Moving forward, as we refine the deliverables, these foundational elements — b
 Through this iterative process, we’ll continue to enhance the deliverables, ensuring that the "title" of each response, like the clear and structured presentation of a Quarto document, is aligned with DOT’s expectations and requirements.
 
 
+<div style="height: 75px;"></div>  <!-- Custom spacer with inline style -->
 
+<footer>
+  <div style="font: 'Arial', sans-serif; font-size: 16px; padding: 10px; background-color: white; color: white; text-align: center; margin: 20px 20px 3px 20px ;">
+     ®2025. All Rights Reserved.
+    Made with ❤️ by OPI
+  </div>
+</footer>
 
 
