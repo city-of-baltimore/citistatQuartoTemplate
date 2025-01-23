@@ -1,9 +1,10 @@
 ---
 title: "CleanStat"
-subtitle: "January 20, 2025 Meeting"
+subtitle: "January 14, 2025 Meeting"
 author: "Mr Trashwheel"
 date: last-modified
 format: citistat-html
+keywords: ["Illegal Dumping", "Street Sweepers", "Tree Pruning"]
 
 ---
 
@@ -18,21 +19,16 @@ library(gt)
 ```
 
 
-## Quarto
+## Objectives
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+The meeting involved DOT, 311 and ECC. The main theme was coming up with a way to make this work better. Using reviews from <https://quarto.org>, we made decent progress in ensuring the speed was more decent.
 
-### next level header
-
-here's text for another thing
-
-### next level header part two
 
 
 ::: {.callout-tip}
-## Since the last meeting
+## Discussion topics
 
-##### Actions:
+###### Key Points:
 * Received data for owner-occupied properties removed from tax sale '21-'24 (BCIT)
 * Check in on opportunities with Pedro Aponte (DOF)
 * Parallel conversations on unpaid water bills (OPI+DPW)
@@ -40,30 +36,72 @@ here's text for another thing
 
 :::
 
+::: {.callout-note}
+## Accomplishments
 
-here's text for another thing more more more
+###### Wins:
+* Received data for owner-occupied properties removed from tax sale '21-'24 (BCIT)
+* Check in on opportunities with Pedro Aponte (DOF)
+* Parallel conversations on unpaid water bills (OPI+DPW)
+* Explored extracting data of returned mail (OPI + MPO + DPW)
 
-## Running Code
+:::
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Title of Point 1
 
-```{r}
-1 + 1
-```
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-The `echo: false` option disables the printing of code (only output is displayed).
+You can use text decorators in your text, including stock ones like **bold**, *italic*, `code`, ~~strike~~, sub~sub~, super^super^. There are more at [this link](https://quarto.org/docs/visual-editor/options.html), or you can display a url with link like <https://quarto.org>.
+
+We've also added custom decorators like [strike through]{.strike}, [cross-off]{.cross}, [highlight]{.highlight}, and [circle]{.circle} text. We can create and add more as needed. You can also add photos into the document as outlined [here](https://quarto.org/docs/authoring/figures.html).
+
+
+### This is the next level header
+
+You can use multiple `#` at the beginning of a line to define the header level, with one hashtag being H1. You can also add lists like this:
+
+* unordered list
+    + sub-item 1
+    + sub-item 2
+        - sub-sub-item 1
+        
+or you can do:
+
+- [ ] Task 1
+- [x] Task 2
+
+or an ordered list
+
+1. ordered list
+2. item 2
+    i.  sub item 1
+    ii. sub item 2
+3. number 3
+
+### a couple other formatting options
+
+You can call out text with blockquotes
 
 > blockquotes are fun
 
-You can also [strike through]{.strike}, [cross-off]{.cross}, [highlight]{.highlight}, and [circle]{.circle} text
 
-:::{.box}
-box for arbitrary content
-:::
+
+You can also add html straight into the doc to have more options. `</br>` is being added below to create additional whitespace.
+
+</br></br></br>
+
+
+## Data and Coding Examples
+
+Python, R and SQL are just a few language that you can use inside codeblocks to create custom tables and figures. If you want to make things complicated, you can [switch back and forth between languages](https://www.r-bloggers.com/2023/01/combining-r-and-python-with-reticulate-and-quarto/) while sharing objects between them.
+
+
 
 Tables below
 
-#### tables!!
+### Tables
+
+The code below using a built-in dataset to create a table.
 
 ```{r}
 
@@ -78,15 +116,53 @@ sp500 |>
       columns = everything()
     ) |> 
     opt_align_table_header(align = "left") |> 
-  tab_options(column_labels.background.color = r4OPI::opiColors()[1])
+  tab_options(column_labels.background.color = "#fdb924")
 
 ```
 
 
-#### map
+### Maps
 
+Interactive maps using leaflet are helpful for relaying spatial information.
+
+#### Blank, unlabeled, nuetral map
 ```{r}
 leaflet() |> 
       setView(lng = -76.61238, lat = 39.29064, zoom = 11) |> 
       addProviderTiles(providers$CartoDB.PositronNoLabels)
 ```
+
+
+
+#### Map with labels and other controls added
+
+```{r}
+leaflet() |> 
+  addTiles(options = providerTileOptions(minZoom = 10, maxZoom = 12)) |> 
+      setView(lng = -76.61238, lat = 39.29064, zoom = 11) |> 
+    setMaxBounds( lng1 = -76.9,
+                  lat1 = 39.1,
+                  lng2 = -76.3,
+                  lat2 = 39.45 )
+```
+
+
+## Discussion
+
+### DOT's Response from Last Deliverables
+
+In reviewing the latest deliverables, the Department of Transportation (DOT) has provided their insights on the initial set of documents. Much like the title block of a Quarto document, which serves as the foundational starting point of any report, the DOT’s response marks the beginning of an ongoing dialogue. Their feedback, much like the title banner, is bold and direct, setting the tone for the content that follows.
+
+Within the structure of these documents, the quarto-title-block holds the essential elements — akin to the key elements of DOT’s response: the title (or purpose) of the deliverables, the main objectives, and the authors responsible. Just as the quarto-title-banner visually highlights the document’s title and subtitle, DOT’s response emphasizes critical action items and recommendations, ensuring that the most important messages stand out clearly.
+
+### 311's Revision to Original Plan
+
+Moving forward, as we refine the deliverables, these foundational elements — both the title block and banner of Quarto and DOT’s feedback — will guide the way. Just as .quarto-title-banner styles the title with prominence, DOT's feedback serves as the driving force that will shape the revisions, ensuring each aspect of the project is highlighted and addressed.
+
+#### Detailed Revisions
+Through this iterative process, we’ll continue to enhance the deliverables, ensuring that the "title" of each response, like the clear and structured presentation of a Quarto document, is aligned with DOT’s expectations and requirements.
+
+
+
+
+
