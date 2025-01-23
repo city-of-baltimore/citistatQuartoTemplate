@@ -14,6 +14,7 @@ keywords: ["Illegal Dumping", "Street Sweepers", "Tree Pruning"]
 library(tidyverse)
 library(leaflet)
 library(gt)
+library(plotly)
 
 
 ```
@@ -53,7 +54,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 You can use text decorators in your text, including stock ones like **bold**, *italic*, `code`, ~~strike~~, sub~sub~, super^super^. There are more at [this link](https://quarto.org/docs/visual-editor/options.html), or you can display a url with link like <https://quarto.org>.
 
-We've also added custom decorators like [strike through]{.strike}, [cross-off]{.cross}, [highlight]{.highlight}, and [circle]{.circle} text. We can create and add more as needed. You can also add photos into the document as outlined [here](https://quarto.org/docs/authoring/figures.html).
+We've also added custom decorators like [strike through]{.strike}, [cross-off]{.cross}, [highlight]{.highlight}, and [circle]{.circle} text. We can create and add more as needed. You can also add photos into quarto documents as outlined [here](https://quarto.org/docs/authoring/figures.html).
 
 
 ### This is the next level header
@@ -97,7 +98,6 @@ Python, R and SQL are just a few language that you can use inside codeblocks to 
 
 
 
-Tables below
 
 ### Tables
 
@@ -110,7 +110,8 @@ sp500 |>
   select(1:4) |> 
   gt() |>
     tab_header(
-      title = md(paste0("**Property type listed in tax sale**"))) |> 
+      title = md(paste0("**Main title of the table**")),
+      subtitle = md("learn more about gt tables [here](https://gt.rstudio.com/) and [here](https://posit.co/blog/winners-of-the-2022-table-contest/)")) |> 
     cols_align(
       align = "left",
       columns = everything()
@@ -121,9 +122,29 @@ sp500 |>
 ```
 
 
+### Interactive chart
+
+[Plotly](https://plotly.com/r/) is a great library for interactive charts and you can easily transform a ggplot into a plotly chart as seen below. This is a *basic* example; you can get more complex. [Highcharter](https://jkunst.com/highcharter/) is another library for interactive charting that might offer more flexibility and customization.
+
+```{r}
+  ggplotly(
+      mtcars |> 
+        ggplot(aes(mpg, disp ,
+                   text = paste0("This point represents an \nmpg = ", mpg, " and a disp = ", disp))) +
+        geom_point(color = "#A42820") + 
+        theme_classic() +
+        labs(y = "Disp",
+             x = "MPG", 
+             title = "Add a descriptive title here"), tooltip = "text") |>  
+      plotly::config(displayModeBar = FALSE)
+
+
+```
+
+
 ### Maps
 
-Interactive maps using leaflet are helpful for relaying spatial information.
+Interactive maps using [leaflet](https://rstudio.github.io/leaflet/) are helpful for relaying spatial information. Points and shapes can be added with custom hover and tooltip behavior.
 
 #### Blank, unlabeled, nuetral map
 ```{r}
@@ -134,7 +155,7 @@ leaflet() |>
 
 
 
-#### Map with labels and other controls added
+#### Base map with labels and other controls added
 
 ```{r}
 leaflet() |> 
@@ -151,7 +172,7 @@ leaflet() |>
 
 ### DOT's Response from Last Deliverables
 
-In reviewing the latest deliverables, the Department of Transportation (DOT) has provided their insights on the initial set of documents. Much like the title block of a Quarto document, which serves as the foundational starting point of any report, the DOT’s response marks the beginning of an ongoing dialogue. Their feedback, much like the title banner, is bold and direct, setting the tone for the content that follows.
+In reviewing the latest deliverable, the Department of Transportation (DOT) has provided their insights on the initial set of documents. Much like the title block of a Quarto document, which serves as the foundational starting point of any report, the DOT’s response marks the beginning of an ongoing dialogue. Their feedback, much like the title banner, is bold and direct, setting the tone for the content that follows.
 
 Within the structure of these documents, the quarto-title-block holds the essential elements — akin to the key elements of DOT’s response: the title (or purpose) of the deliverables, the main objectives, and the authors responsible. Just as the quarto-title-banner visually highlights the document’s title and subtitle, DOT’s response emphasizes critical action items and recommendations, ensuring that the most important messages stand out clearly.
 
