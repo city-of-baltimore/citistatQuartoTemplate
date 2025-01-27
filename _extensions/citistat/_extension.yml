@@ -5,17 +5,22 @@ quarto-required: ">=1.2"
 contributes:
   formats:
     html:
-      #mainfont: Pangolin
-      title-block-banner: "#FCB826"
+      includes:
+        in_header: 
+          <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://use.typekit.net/ldk1cya.css">
+          #mainfont: Pangolin
+      title-block-banner: "#2f1c3d"
       footer: |
         <footer>
-          <div style="font: 'Arial', sans-serif; font-size: 16px; padding: 10px; background-color: white; color: white; text-align: center; margin: 20px 20px 3px 20px;">
+          <div style="padding: 10px; background-color: white; color: white; text-align: center; margin: 20px 20px 3px 20px ;">
             ®2025. Internal Use Only.
             Made with ❤️ by OPI
+          </div>
         </footer>
       filters:
           - annotate.lua
-      theme: [cosmo]#, citistat.scss]
+      theme: [cosmo, citistat.scss]
       embed-resources: true
       smooth-scroll: true
       css: theme.css

@@ -1,11 +1,11 @@
 /* css styles */
 
-
+/* Beginning Top Header */
 
 @media all and (min-width:409px) {
 .quarto-title-block .quarto-title-banner {
   background-image: url(images/opi_logo.png);
-  background-color: #FCB826;
+  background-color: #fabe21;
   background-size: 200px;
   background-position: left;
   background-repeat: no-repeat;
@@ -13,11 +13,23 @@
   background-origin: content-box;
 }
 
-.quarto-title-banner h1, .quarto-title-banner .h1, .quarto-title-banner h2, .quarto-title-banner .h2 {
-  color: black;
+p.subtitle.lead{
+  color: #190e21;
 }
 
-/* Custom CSS to position links on the right side */
+.quarto-title-banner h1, .quarto-title-banner .h1, .quarto-title-banner h2, .quarto-title-banner .h2 {
+  color: #190e21;
+}
+
+/* End Top Header */
+
+
+/* Beginning Previous Meeting */
+
+strong{
+   color: #66b7c9;  /* Gold color */
+}
+
 #right-links {
   position: fixed;
   right: 10px;
@@ -38,20 +50,42 @@
 }
 
 #right-links a:hover {
-  text-decoration: underline;
+  color: #2761e3;
 }
 
 .previous-meetings-container {
   font-size: 14px;
   padding: 2px; /* Horizontal and vertical padding */
-  color: #FCB826; /* Link color */
   background-color: white; /* Optional: Background color */
 }
 
-/* Change the color of the scrollbar in the TOC */
+/* End Previous Meeting */
+
+
+/* Beginning Table Of Contents */
+a, a.uri{
+  color: #88c7d5;
+}
+
+nav[role="doc-toc"] a.active {
+    color: red !important;  /* Red color for active TOC items */
+}
+
+a.active {
+    color: #FF5733 !important;  /* Replace with your preferred color */
+    font-weight: bold; /* Optional: make the active link bold */
+    text-decoration: underline; /* Optional: underline the active link */
+}
+
+h2#toc-title{
+  color: #66b7c9;
+}
+
+
 .toc {
-  scrollbar-color: #FCB826 transparent; /* Set the scrollbar thumb to yellow and track to transparent */
+  scrollbar-color: #2f1c3d transparent; /* Set the scrollbar thumb to yellow and track to transparent */
   scrollbar-width: thin;  /* Set the scrollbar width */
+  color: white;
 }
 
 /* For Webkit browsers (Chrome, Safari) */
@@ -60,7 +94,7 @@
 }
 
 .toc::-webkit-scrollbar-thumb {
-  background-color: #FCB826;  /* Set the color of the thumb (scroll handle) */
+  background-color: #2f1c3d;  /* Set the color of the thumb (scroll handle) */
   border-radius: 10px;  /* Optional: makes the thumb rounded */
 }
 
@@ -70,32 +104,40 @@
 
 /* Change the link color in the TOC */
 .toc a {
-  color: #FCB826;  /* Gold color */
+  color: #2f1c3d;  /* Gold color */
 }
 
-p, h5, h6, h1, li{
+h5, h6, h1, li{
   color: black;  /* Gold color */
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+p{
+  color: black;  /* Gold color */
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 h2{
-  color: #FCB826;
-  font-size: 20px;
+  color: #2f1c3d;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 30px;
 }
 
 h3{
-  color: #2761e3;
-  font-size: 18px;
+  color: #2f1c3d;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 24px;
 }
   
 h4{
-  font-size: 18px;
-   color: black; 
+  font-size: 20px;
+  font-family: 'Proxima Nova', sans-serif;
+  color: #2f1c3d; 
 }
 
-strong{
-   color: #FCB826;  /* Gold color */
-}
-}
+
+
+
 
 
 
