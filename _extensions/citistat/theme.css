@@ -2,7 +2,6 @@
 
 /* Beginning Top Header */
 
-@media all and (min-width:409px) {
 .quarto-title-block .quarto-title-banner {
   background-image: url(images/opi_logo.png);
   background-color: #fabe21;
@@ -139,10 +138,4 @@ h4{
   font: Source Sans Pro;
   color: #2f1c3d; 
 }
-
-
-
-
-
-
 
