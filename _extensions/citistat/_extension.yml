@@ -20,13 +20,14 @@ contributes:
         </footer>
       filters:
           - annotate.lua
-      theme: [cosmo, citistat.scss]
+      theme: [cosmo]#, citistat.scss]
       embed-resources: true
       smooth-scroll: true
       css: theme.css
       self-contained: true
       toc: true
-      toc-expand: 2
+      toc-expand: 4
+      toc-depth: 4
       toc-location: left
       execute:
         echo: false
