@@ -12,6 +12,7 @@ keywords: ["Illegal Dumping", "Street Sweepers", "Tree Pruning"]
 library(tidyverse)
 library(leaflet)
 library(gt)
+library(plotly)
 
 
 ```
