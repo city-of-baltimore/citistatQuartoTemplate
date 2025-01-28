@@ -4,7 +4,8 @@
 
 /*-- scss:rules --*/
 pre > code.sourceCode > span {
- font-family: 'Pangolin';
+ /*font-family: 'Nunito Sans', sans-serif */
+  font: Source Sans Pro;
 }
 
 div.sourceCode{
@@ -12,7 +13,8 @@ div.sourceCode{
 }
 
 pre>code, p code{
-  font-family: 'Pangolin';
+    /*font-family: 'Nunito Sans', sans-serif */
+  font: Source Sans Pro;
 }
 
 h2{
