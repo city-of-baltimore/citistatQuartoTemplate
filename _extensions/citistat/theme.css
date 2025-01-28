@@ -109,29 +109,34 @@ h2#toc-title{
 
 h5, h6, h1, li{
   color: black;  /* Gold color */
-  font-family: 'Nunito Sans', sans-serif;
+  /*font-family: 'Nunito Sans', sans-serif */
+  font: Source Sans Pro;
 }
 
 p{
   color: black;  /* Gold color */
-  font-family: 'Nunito Sans', sans-serif;
+  /*font-family: 'Nunito Sans', sans-serif */
+  font: Source Sans Pro;
 }
 
 h2{
   color: #2f1c3d;
-  font-family: 'Proxima Nova', sans-serif;
+  /*font-family: 'Proxima Nova', sans-serif; */
+  font: Source Sans Pro;
   font-size: 30px;
 }
 
 h3{
   color: #2f1c3d;
-  font-family: 'Proxima Nova', sans-serif;
+  /*font-family: 'Proxima Nova', sans-serif; */
+  font: Source Sans Pro;
   font-size: 24px;
 }
   
 h4{
   font-size: 20px;
-  font-family: 'Proxima Nova', sans-serif;
+  /*font-family: 'Proxima Nova', sans-serif; */
+  font: Source Sans Pro;
   color: #2f1c3d; 
 }
 

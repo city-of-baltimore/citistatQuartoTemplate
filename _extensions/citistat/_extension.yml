@@ -26,6 +26,7 @@ contributes:
       css: theme.css
       self-contained: true
       toc: true
+      toc-collapse: true
       toc-expand: 4
       toc-depth: 4
       toc-location: left
