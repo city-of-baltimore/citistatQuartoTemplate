@@ -11,23 +11,15 @@ contributes:
           <link rel="stylesheet" href="https://use.typekit.net/ldk1cya.css">
           #mainfont: Pangolin
       title-block-banner: "#2f1c3d"
-      footer: |
-        <footer>
-          <div style="padding: 10px; background-color: white; color: white; text-align: center; margin: 20px 20px 3px 20px ;">
-            ®2025. Internal Use Only.
-            Made with ❤️ by OPI
-          </div>
-        </footer>
+      theme: [cosmo]#, citistat.scss]
       filters:
           - annotate.lua
-      theme: [cosmo]#, citistat.scss]
       embed-resources: true
       smooth-scroll: true
       css: theme.css
       self-contained: true
       toc: true
       toc-collapse: true
-      toc-expand: 4
       toc-depth: 4
       toc-location: left
       execute:
